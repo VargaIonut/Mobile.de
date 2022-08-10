@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1104,827</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1206,817.333333333333</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>EndProcess_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -65,34 +65,27 @@
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="This wf send mail to the managers and close browser" DisplayName="EndProcess" sap:VirtualizedContainerService.HintSize="376,643" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="This wf send mail to the managers and close browser" DisplayName="EndProcess" sap:VirtualizedContainerService.HintSize="376,652" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message - Start EndProcess" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Start EndProcess&quot;]" />
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke SendMails workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="AplicationLayer\DataLayer\SendMails.xaml">
+    <ui:LogMessage DisplayName="Log Message - Start EndProcess" sap:VirtualizedContainerService.HintSize="334,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Start EndProcess&quot;]" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke SendMails workflow" sap:VirtualizedContainerService.HintSize="334,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="AplicationLayer\DataLayer\SendMails.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="x:String" x:Key="in_path">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_config(&quot;path&quot;).ToString" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_managers">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_config(&quot;mailManagers&quot;).ToString" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_subject">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_config(&quot;subject&quot;).ToString" />
-        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_path">[in_config("path").ToString]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_managers">[in_config("mailManagers").ToString]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_subject">[in_config("subject").ToString]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <ui:CloseApplication DisplayName="Close Edge" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
       <ui:CloseApplication.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f9eab8bd-bed4-4cb5-bc7b-3ea2a7b3790f" InformativeScreenshot="c0ab3a23b19da25d7b0947de6afb800d" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Audi BMW A6 X6 | Buy a Car at mobile.de - Work - Microsoft​ Edge' /&gt;&lt;wnd cls='Intermediate D3D Window' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f9eab8bd-bed4-4cb5-bc7b-3ea2a7b3790f" InformativeScreenshot="c0ab3a23b19da25d7b0947de6afb800d" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='*| Buy a Car at mobile.de - Work - Microsoft​ Edge' /&gt;&lt;wnd cls='Intermediate D3D Window' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -102,6 +95,6 @@
         </ui:Target>
       </ui:CloseApplication.Target>
     </ui:CloseApplication>
-    <ui:LogMessage DisplayName="Log Message - Finish EndProcess" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Finish EndProcess&quot;]" />
+    <ui:LogMessage DisplayName="Log Message - Finish EndProcess" sap:VirtualizedContainerService.HintSize="334,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Finish EndProcess&quot;]" />
   </Sequence>
 </Activity>
