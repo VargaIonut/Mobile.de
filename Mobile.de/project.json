@@ -1,0 +1,83 @@
+{
+  "name": "Mobile.de-PDD",
+  "description": "Blank Process",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.12.3]",
+    "UiPath.Mail.Activities": "[1.15.2]",
+    "UiPath.System.Activities": "[22.4.4]",
+    "UiPath.UIAutomation.Activities": "[22.4.7]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "22.4.4.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6e938535-3183-49a6-ab1e-e8cbd8dd8b32",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase\\TestCase_Edge_FilterMakeAndModel.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b196c0c5-99c0-456b-94fb-31fe2a8404f4",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase\\TestCase_Edge_SelectTypeCar.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "49d416e0-4714-4c6a-b298-0d65e98d9b40",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase\\TestCase_Edge_FilterFuelType.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e6a37e8b-5e73-4ab1-8014-6cbd18c3b272",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase\\TestCase_Edge_FilterCapacityPowerTransmissionEmissions.xaml"
+      }
+    ],
+    "modernBehavior": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "d54adef6-74d3-4347-bd52-24fd0931549f",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
+}
